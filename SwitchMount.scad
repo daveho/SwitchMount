@@ -2,11 +2,18 @@
 // This seems to be a standard size requiring a 14mm by 29mm cutout.
 // The mount is intended to be screwed to a horizontal surface
 // using 6-32 machine screws.
+//
+// Note that this needs to be screwed down before the switch
+// is snapped in, since the switch body obstructs the screw holes.
+// (Bad design? Maybe.)
 
 $fn = 60;
 
+// Note: even though the nominal cutout size is 29mm by 14mm,
+// I've reduced it to 29mm by 12.8mm, which seems to yield
+// a snug fit.
 cutout_w = 29;
-cutout_h = 14;
+cutout_h = 12.8;
 
 // how much additional width and height the plate should have
 // beyond the cutout for the switch
