@@ -88,4 +88,8 @@ module switch_mount() {
 //plate();
 //brace();
 //screw_tab();
-switch_mount();
+
+// rotate face down for printing
+rotate([90, 0, 0]) {
+    switch_mount();
+}
